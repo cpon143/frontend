@@ -1,0 +1,54 @@
+<!-- <html>
+<style>
+body * {
+margin: 20px;
+border: 5px solid red;
+}
+</style>
+
+<form onclick="alert('form')">FORM
+<div onmouseover="alert('div')">DIV
+<p onclick="alert('p')">P</p>
+</div>
+</form>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .a {
+            width: 100%;
+            border: 5px solid black;
+            padding: 100px;
+            background-color: yellow;
+        }
+
+        .b {
+            padding: 50px 50px;
+            background-color: lightblue;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <div class="a " id="c">
+            <button class="b" id="d" onclick="change1(), change()">button1</button>
+        </div>
+
+        <script>
+            function change() {
+                document.getElementById("c").style.backgroundColor = "red";
+            }
+            function change1() {
+                document.getElementById("d").style.backgroundColor = "yellow";
+            }
+        </script>
+   
+</body>
+
+</html>

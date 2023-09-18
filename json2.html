@@ -1,0 +1,31 @@
+<!-- for accessing using for loop without " " and json creat indiviul file for it-->  
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let student={
+            "Name":"Md Mazharul Haque",
+            "Reg_No":"12211223",
+            "University": "Lovely Professional University",
+            "CGPA": 78542,
+            "courses":["javaS","math","py"]
+        }
+
+        //for(let key in student){
+          //  document.write(key + " : " +student[key]+"<br>")
+        //}
+
+        let key=Object.keys(student);
+        for(let i=0; i<key.length; i++){
+            document.write(key[i] +" : "+ student[key[i]] + "<br>");
+        }
+
+    </script>
+</body>
+</html>

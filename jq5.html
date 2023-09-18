@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" id="txt">
+    <input type="submit" id="sub" disabled>
+    <script>
+        $("#txt").keyup(function(){
+            if($("#txt").val()!=" "){
+                $("#sub").removeAttr("disabled");
+            }
+            else{
+                $("#sub").attr("disabled",false);
+            }
+        })
+    </script>
+</body>
+</html> -->
+
+<!-- Q 6. write a query for a input box to check wether the number in textbox is cross the character limit or not if it is cross the limit if some character are remaning then count remaning character show the message "character remaning "in number" then show the error message in red color and if it is not cross the limit then show the message in green color. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<input type="text" id="txt">
+<input type="submit" id="sub" disabled>
+<script>
+    $("#txt").keyup(function(){
+        if($("#txt").val().length>10){
+            $("#sub").removeAttr("disabled");
+            $("#sub").css("color","red");
+            $("#sub").val("character remaning "+($("#txt").val().length-10));
+        }
+        else{
+            $("#sub").attr("disabled",false);
+            $("#sub").css("color","green");
+            $("#sub").val("character remaning "+($("#txt").val().length-10));
+        }
+    })
+</script>
+</body>
+</html>

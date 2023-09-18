@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Show Current Date and Time</title>
+</head>
+
+<body>
+    <button onclick="show()"> Start </button>
+    <button onclick="stop()"> Stop </button>
+    <h1 id="showme"></h1>
+    <script>
+        var p = 0;
+        function show() {
+
+            p = setInterval(function show(){document.getElementById("showme").innerHTML = Date()}, 1000);
+
+
+        }
+        function stop() {
+            clearInterval(p);
+        }
+    </script>
+</body>
+
+</html>

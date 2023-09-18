@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Time Interval</title>
+</head>
+
+<body>
+    <!-- <button onclick="setInterval(periodic,3000)"> click here</button> -->
+    <!-- <script>
+        function periodic(){
+            alert("hello");
+        }
+    </script> -->
+
+    <!-- -------------------------------------------------- -->
+    <button onclick="funct()"> Click here </button>
+    <script>
+        function funct() {
+            var p = setInterval(func, 3000);
+            function func() {
+                alert("hello");
+              
+                    clearInterval(p);
+                
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- -------------------------------------------------- -->

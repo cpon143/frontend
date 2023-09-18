@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <input onclick="fun1()" type="submit" value="Add">
+    <h2 id="result"></h2>
+    <script>
+        var num1 = Number(document.getElementById("num1").value);
+        var num2 = Number(document.getElementById("num2").value);
+        var sum= num1 - num2;
+        function fun1() {
+            document.getElementById("result").textContent = "The sum of two numbers is " + sum;
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!-- 
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <input type="button" value="Add" onclick="add()">
+    <input type="button" value="Sub" onclick="sub()">
+    <input type="button" value="Mul" onclick="mul()">
+    <input type="button" value="Div" onclick="div()">
+    <div id="result"></div>
+    <script>
+        function add() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var sum = num1 + num2;
+            document.getElementById("result").textContent = "The sum of two numbers is " + sum;
+        }
+        function sub() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var sum = num1 - num2;
+            document.getElementById("result").textContent = "The sub of two numbers is " + sum;
+        }
+        function mul() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var sum = num1 * num2;
+            document.getElementById("result").textContent = "The mul of two numbers is " + sum;
+        }
+        function div() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var sum = num1 / num2;
+            document.getElementById("result").textContent = "The div of two numbers is " + sum;
+        }
+    </script>
+</body>
+
+</html>
+
+ -->
